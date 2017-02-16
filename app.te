@@ -274,7 +274,7 @@ allow appdomain cache_file:dir getattr;
 
 # Superuser capabilities.
 # bluetooth requires net_admin and wake_alarm.
-neverallow { appdomain -bluetooth } self:capability *;
+neverallow { appdomain -shell -bluetooth } self:capability *;
 neverallow { appdomain -bluetooth } self:capability2 *;
 
 # Block device access.
